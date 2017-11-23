@@ -20,7 +20,9 @@ import com.yalantis.ucrop.UCrop;
 
 import java.io.File;
 
+import lyhoangvinh.com.jocky_mvp.Model.Driver;
 import lyhoangvinh.com.jocky_mvp.R;
+import lyhoangvinh.com.jocky_mvp.ui.Login.LoginActivity;
 import lyhoangvinh.com.jocky_mvp.utils.crop.CropImageUtil;
 
 public class HomeActivity extends AppCompatActivity
@@ -152,6 +154,10 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_manage) {
 
+        }else if (id == R.id.nav_logout){
+            Driver.deleteAll(Driver.class);
+            startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+            finish();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

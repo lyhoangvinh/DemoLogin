@@ -6,24 +6,23 @@ import com.orm.SugarRecord;
  * Created by ADMIN on 10/18/2017.
  */
 
-public class Driver extends SugarRecord{
+public class Driver extends SugarRecord {
 
     private String firstname;
     private String lastname;
     private String email;
-    private String password;
     private String picture;
     private String firebaseId;
     private String role;
     private String token;
 
-    public Driver(){}
+    public Driver() {
+    }
 
-    public Driver(String firstname, String lastname, String email, String password, String picture, String firebaseId, String role, String token) {
+    public Driver(String firstname, String lastname, String email, String picture, String firebaseId, String role, String token) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
-        this.password = password;
         this.picture = picture;
         this.firebaseId = firebaseId;
         this.role = role;
@@ -54,15 +53,6 @@ public class Driver extends SugarRecord{
 
     public Driver setEmail(String email) {
         this.email = email;
-        return this;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public Driver setPassword(String password) {
-        this.password = password;
         return this;
     }
 

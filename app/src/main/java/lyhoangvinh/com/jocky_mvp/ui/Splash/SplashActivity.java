@@ -19,8 +19,14 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         if (DriverController.isLogin(SplashActivity.this)) {
             Driver driver = DriverController.getCurrentDriver(this);
-            Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
-            startActivity(intent);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }, 500);
         } else {
             new Handler().postDelayed(new Runnable() {
                 @Override

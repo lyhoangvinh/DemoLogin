@@ -10,6 +10,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import lyhoangvinh.com.jocky_mvp.Constants.ConstantsKey;
+import lyhoangvinh.com.jocky_mvp.Model.Driver;
 
 /**
  * Created by ADMIN on 10/18/2017.
@@ -38,6 +39,17 @@ public class LoginPresenter implements ILoginPresenter{
                         JSONObject jsonObject = new JSONObject(response);
                         String status = jsonObject.getString(ConstantsKey.STATUS_KEY);
                         if (status.equals(ConstantsKey.SUCCESS_KEY)) {
+                            JSONObject objectData = jsonObject.getJSONObject(ConstantsKey.DATA_KEY);
+                            String firstname = objectData.getString(ConstantsKey.FISTNAME_KEY);
+                            String lastname = objectData.getString(ConstantsKey.LASTNAME_KEY);
+                            String email = objectData.getString(ConstantsKey.EMAIL_KEY);
+                            String mobile = objectData.getString(ConstantsKey.MOBILE_KEY);
+                            String picture = objectData.getString(ConstantsKey.PICTURE);
+                            String firebaseId = objectData.getString(ConstantsKey.FIREBASE_ID);
+                            String role = objectData.getString(ConstantsKey.ROLE);
+                            String token = objectData.getString(ConstantsKey.TOKEN_KEY);
+                            Driver driver = new Driver(firstname, lastname, email, picture, firebaseId, role, token);
+                            driver.save();
                             view.loginSuccess();
                         }else{
                             view.loginFailed();

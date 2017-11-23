@@ -18,4 +18,6 @@ public class ConstantsKey {
     public static final String LASTNAME_KEY = "lastname";
     public static final String MOBILE_KEY = "mobile";
     public static final String PROFILE_IMAGE = "profile_image";
+    public static final String FIREBASE_ID= "firebaseId";
+    public static final String ROLE = "role";
 }
