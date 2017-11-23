@@ -1,16 +1,34 @@
 package lyhoangvinh.com.jocky_mvp.Model;
 
+import com.orm.SugarRecord;
+
 /**
  * Created by ADMIN on 10/18/2017.
  */
 
-public class Driver {
+public class Driver extends SugarRecord{
 
     private String firstname;
     private String lastname;
     private String email;
     private String password;
     private String picture;
+    private String firebaseId;
+    private String role;
+    private String token;
+
+    public Driver(){}
+
+    public Driver(String firstname, String lastname, String email, String password, String picture, String firebaseId, String role, String token) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
+        this.password = password;
+        this.picture = picture;
+        this.firebaseId = firebaseId;
+        this.role = role;
+        this.token = token;
+    }
 
     public String getFirstname() {
         return firstname;
@@ -54,6 +72,33 @@ public class Driver {
 
     public Driver setPicture(String picture) {
         this.picture = picture;
+        return this;
+    }
+
+    public String getFirebaseId() {
+        return firebaseId;
+    }
+
+    public Driver setFirebaseId(String firebaseId) {
+        this.firebaseId = firebaseId;
+        return this;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public Driver setRole(String role) {
+        this.role = role;
+        return this;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public Driver setToken(String token) {
+        this.token = token;
         return this;
     }
 }

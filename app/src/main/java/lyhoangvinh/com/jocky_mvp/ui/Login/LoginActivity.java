@@ -1,4 +1,4 @@
-package lyhoangvinh.com.jocky_mvp.View.Login;
+package lyhoangvinh.com.jocky_mvp.ui.Login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,9 +6,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import lyhoangvinh.com.jocky_mvp.Presenter.Login.LoginPresenter;
 import lyhoangvinh.com.jocky_mvp.R;
-import lyhoangvinh.com.jocky_mvp.View.Home.HomeActivity;
+import lyhoangvinh.com.jocky_mvp.ui.Home.HomeActivity;
 import lyhoangvinh.com.jocky_mvp.utils.crop.BaseActivity;
 import lyhoangvinh.com.jocky_mvp.utils.crop.CheckConnectedDialog;
 

@@ -1,4 +1,4 @@
-package lyhoangvinh.com.jocky_mvp.Model.Login;
+package lyhoangvinh.com.jocky_mvp.ui.Login;
 
 import android.app.Activity;
 

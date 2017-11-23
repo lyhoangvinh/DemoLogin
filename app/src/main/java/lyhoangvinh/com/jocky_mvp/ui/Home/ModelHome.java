@@ -1,4 +1,4 @@
-package lyhoangvinh.com.jocky_mvp.Model.Home;
+package lyhoangvinh.com.jocky_mvp.ui.Home;
 
 import android.content.Context;
 

@@ -1,4 +1,4 @@
-package lyhoangvinh.com.jocky_mvp.Presenter.Login;
+package lyhoangvinh.com.jocky_mvp.ui.Login;
 
 /**
  * Created by ADMIN on 10/19/2017.

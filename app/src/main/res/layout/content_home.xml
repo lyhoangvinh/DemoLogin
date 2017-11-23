@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="lyhoangvinh.com.jocky_mvp.View.Home.HomeActivity"
+    tools:context="lyhoangvinh.com.jocky_mvp.ui.Home.HomeActivity"
     tools:showIn="@layout/app_bar_home">
 
     <LinearLayout

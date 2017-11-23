@@ -1,4 +1,4 @@
-package lyhoangvinh.com.jocky_mvp.View.Home;
+package lyhoangvinh.com.jocky_mvp.ui.Home;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -20,7 +20,6 @@ import com.yalantis.ucrop.UCrop;
 
 import java.io.File;
 
-import lyhoangvinh.com.jocky_mvp.Presenter.Home.HomePresenter;
 import lyhoangvinh.com.jocky_mvp.R;
 import lyhoangvinh.com.jocky_mvp.utils.crop.CropImageUtil;
 

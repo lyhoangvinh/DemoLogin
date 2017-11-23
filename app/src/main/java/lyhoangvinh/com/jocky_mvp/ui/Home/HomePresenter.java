@@ -1,4 +1,4 @@
-package lyhoangvinh.com.jocky_mvp.Presenter.Home;
+package lyhoangvinh.com.jocky_mvp.ui.Home;
 
 import android.content.Context;
 import android.widget.Toast;
@@ -7,9 +7,6 @@ import com.android.volley.Response;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-
-import lyhoangvinh.com.jocky_mvp.Model.Home.ModelHome;
-import lyhoangvinh.com.jocky_mvp.View.Home.HomeView;
 
 /**
  * Created by ADMIN on 10/19/2017.

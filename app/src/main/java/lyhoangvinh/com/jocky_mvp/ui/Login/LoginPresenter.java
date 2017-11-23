@@ -1,4 +1,4 @@
-package lyhoangvinh.com.jocky_mvp.Presenter.Login;
+package lyhoangvinh.com.jocky_mvp.ui.Login;
 
 import android.app.Activity;
 import android.util.Log;
@@ -10,8 +10,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import lyhoangvinh.com.jocky_mvp.Constants.ConstantsKey;
-import lyhoangvinh.com.jocky_mvp.Model.Login.ModelLogin;
-import lyhoangvinh.com.jocky_mvp.View.Login.LoginView;
 
 /**
  * Created by ADMIN on 10/18/2017.
@@ -51,8 +49,8 @@ public class LoginPresenter implements ILoginPresenter{
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Log.d(TAG, "CallApiLogin onErrorResponse: "+ error.toString());
                     view.noConnectionError();
+                    Log.d(TAG, "CallApiLogin onErrorResponse: "+ error.toString());
                 }
             });
         }
