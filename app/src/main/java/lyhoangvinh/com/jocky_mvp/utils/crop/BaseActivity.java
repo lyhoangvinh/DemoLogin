@@ -33,8 +33,19 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
     }
 
-    protected void showToast(String msg) {
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        dismissProgress();
+    }
+
+
+    protected void showToastLong(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
+    }
+
+    protected void showToastShort(String msg){
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 
     protected void showAlert(String msg) {

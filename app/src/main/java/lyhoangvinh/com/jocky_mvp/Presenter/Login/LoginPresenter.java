@@ -32,6 +32,7 @@ public class LoginPresenter implements ILoginPresenter{
     @Override
     public void CallApiLogin(final String email, String pass) {
         if (view!=null){
+            view.showLoading();
             modelLogin.PerformLoginAPI(context, email, pass, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
@@ -51,6 +52,7 @@ public class LoginPresenter implements ILoginPresenter{
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     Log.d(TAG, "CallApiLogin onErrorResponse: "+ error.toString());
+                    view.noConnectionError();
                 }
             });
         }

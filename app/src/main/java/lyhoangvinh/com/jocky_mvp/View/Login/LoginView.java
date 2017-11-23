@@ -7,4 +7,7 @@ package lyhoangvinh.com.jocky_mvp.View.Login;
 public interface LoginView {
     void loginSuccess();
     void loginFailed();
+    void showLoading();
+    void hideLoading();
+    void noConnectionError();
 }

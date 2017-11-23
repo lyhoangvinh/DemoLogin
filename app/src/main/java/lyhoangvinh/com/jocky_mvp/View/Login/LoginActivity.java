@@ -44,7 +44,6 @@ public class LoginActivity extends BaseActivity implements LoginView {
                 String myEmail = edtEmail.getText().toString();
                 String myPass = edtPass.getText().toString();
                 presenter.CallApiLogin(myEmail, myPass);
-                showProgress("Loading");
             }
         });
     }
@@ -58,9 +57,26 @@ public class LoginActivity extends BaseActivity implements LoginView {
 
     @Override
     public void loginFailed() {
-        showToast("Failed Login");
+        showToastLong("Failed Login");
         dismissProgress();
     }
+
+    @Override
+    public void showLoading() {
+        showProgress("Loading");
+    }
+
+    @Override
+    public void hideLoading() {
+        dismissProgress();
+    }
+
+    @Override
+    public void noConnectionError() {
+        showToastShort("Please check again to connect");
+        dismissProgress();
+    }
+
     private void checkConnection() {
         if (!isConnected()) connectedDialog.checkConnectedDialog().show();
     }
