@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="lyhoangvinh.com.jocky_mvp.View.Home.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:id="@+id/lnUploadSelfie"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/lnMakeAva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/txt_large"
+            android:layout_marginTop="@dimen/dimen20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameDriverUploadSelfie"
+                style="@style/txt_large_dark"
+                android:text="Hi Tom" />
+
+            <TextView
+                style="@style/txt_normal_dark"
+                android:layout_marginTop="@dimen/dimen20dp"
+                android:text="@string/before_you_get"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                style="@style/txt_normal_red"
+                android:layout_marginTop="@dimen/txt_large"
+                android:text="@string/Otherwise" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnBtnUploadSelfie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/txt_large"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/txt_normal_dark_bg_graylight"
+                android:layout_weight="1.8"
+                android:text="@string/Upload_selfie"
+                android:textAlignment="viewStart" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:padding="10dp"
+                android:src="@drawable/btn_upload_selfie" />
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Do this later"
+                android:textAlignment="center"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/txt_normal" />
+
+            <Button
+                android:id="@+id/btnSubmitUploadSelfie"
+                style="@style/btn_green"
+                fontPath="@string/font_bold_quickSan"
+                android:layout_alignParentBottom="true"
+                android:background="@color/blue"
+                android:text="@string/submit"
+                android:textSize="@dimen/txt_normal_medium" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

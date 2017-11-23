@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">jocky MVP</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Go Offline</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    
+    <string name="before_you_get">Before you get started, we will \nneed you to get a picture of you \nfor verification purposes.</string>
+    <string name="Otherwise">Otherwise, you will remain offline.</string>
+    <string name="Upload_selfie">Upload selfie</string>
+
+    <!--Font-->
+    <string name="font_bold_openSans">fonts/OpenSans-Bold.ttf</string>
+    <string name="font_bold_quickSan">fonts/Quicksand-Bold.ttf</string>
+    <string name="font_lastresort">fonts/LastResort.ttf</string>
+
+    <string name="submit">Submit</string>
+    <string name="select_image">Select image</string>
+
+    <string name="toast_cannot_retrieve_selected_image">Cannot retrieve selected image</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="toast_unexpected_error">Unexpected error</string>
+</resources>

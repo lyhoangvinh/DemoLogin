@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#5d9fcf</color>
+    <color name="bg_graylight">#ebe8e8</color>
+    <dimen name="width_height_avatar">60dp</dimen>
+    <color name="dark_text">#2a2a2a</color>
+    <color name="green">#5bd982</color>
+</resources>
