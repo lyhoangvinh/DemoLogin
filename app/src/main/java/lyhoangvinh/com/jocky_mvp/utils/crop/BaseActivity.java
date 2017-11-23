@@ -16,7 +16,6 @@ import lyhoangvinh.com.jocky_mvp.R;
  */
 
 public abstract class BaseActivity extends AppCompatActivity {
-    public Context context;
     public ProgressDialog progressDialog;
 
     protected void showProgress(String msg) {
