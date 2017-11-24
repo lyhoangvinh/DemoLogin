@@ -16,7 +16,7 @@ import lyhoangvinh.com.jocky_mvp.Model.Driver;
  * Created by ADMIN on 10/18/2017.
  */
 
-public class LoginPresenter implements ILoginPresenter{
+public class LoginPresenter implements ILoginPresenter {
     private static final String TAG = "LoginPresenter";
     LoginView view;
     ModelLogin modelLogin;
@@ -30,7 +30,7 @@ public class LoginPresenter implements ILoginPresenter{
 
     @Override
     public void CallApiLogin(final String email, String pass) {
-        if (view!=null){
+        if (view != null) {
             view.showLoading();
             modelLogin.PerformLoginAPI(context, email, pass, new Response.Listener<String>() {
                 @Override
@@ -51,7 +51,7 @@ public class LoginPresenter implements ILoginPresenter{
                             Driver driver = new Driver(firstname, lastname, email, picture, firebaseId, role, token);
                             driver.save();
                             view.loginSuccess();
-                        }else{
+                        } else {
                             view.loginFailed();
                         }
                     } catch (JSONException e) {
@@ -62,7 +62,7 @@ public class LoginPresenter implements ILoginPresenter{
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     view.noConnectionError();
-                    Log.d(TAG, "CallApiLogin onErrorResponse: "+ error.toString());
+                    Log.d(TAG, "CallApiLogin onErrorResponse: " + error.toString());
                 }
             });
         }

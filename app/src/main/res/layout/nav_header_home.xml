@@ -35,7 +35,7 @@
             <TextView
                 android:id="@+id/tvNameMenu"
                 style="@style/txt_normal_dark"
-                android:text="ROSHAN"
+                android:text="Loading.."
                 android:textSize="@dimen/txt_small_normal" />
 
             <TextView

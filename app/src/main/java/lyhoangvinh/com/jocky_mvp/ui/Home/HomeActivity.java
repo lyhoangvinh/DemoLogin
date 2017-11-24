@@ -42,6 +42,7 @@ public class HomeActivity extends BaseActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
@@ -61,6 +62,7 @@ public class HomeActivity extends BaseActivity
         init();
         initEvent();
         loadUser();
+
     }
 
     private void init(){
@@ -79,8 +81,7 @@ public class HomeActivity extends BaseActivity
 
     private void loadUser(){
         tvNameMenu.setText(DriverController.getCurrentDriver(this).getLastname());
-        Glide
-                .with(this)
+        Glide.with(this)
                 .load(DriverController.getCurrentDriver(this).getPicture())
                 .into(imvAvatar);
         Log.d("HomeActivity", DriverController.getCurrentDriver(this).getLastname());

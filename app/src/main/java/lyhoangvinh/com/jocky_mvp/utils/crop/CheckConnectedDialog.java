@@ -16,6 +16,10 @@ public  class CheckConnectedDialog {
         this.activity = activity;
     }
 
+    public void checkConnectedDialogShow(){
+        checkConnectedDialog().show();
+    }
+
     public AlertDialog.Builder checkConnectedDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setCancelable(false);

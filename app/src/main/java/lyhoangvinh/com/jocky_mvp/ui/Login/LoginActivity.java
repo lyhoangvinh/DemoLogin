@@ -25,8 +25,9 @@ public class LoginActivity extends BaseActivity implements LoginView {
         setContentView(R.layout.activity_login);
         init();
         initEvent();
-        checkConnection();
+//        checkConnection();
     }
+
 
     private void init() {
         edtEmail = (EditText) findViewById(R.id.edtEmailSignIn);
@@ -74,9 +75,5 @@ public class LoginActivity extends BaseActivity implements LoginView {
     public void noConnectionError() {
         showToastShort("Please check again to connect");
         dismissProgress();
-    }
-
-    private void checkConnection() {
-        if (!isConnected()) connectedDialog.checkConnectedDialog().show();
     }
 }
