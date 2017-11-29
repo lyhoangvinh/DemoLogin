@@ -49,7 +49,6 @@ public class LoginPresenter implements ILoginPresenter {
                         @Override
                         public void OnError(Exception ex) {
                             Log.d(TAG, "OnError" + ex.getMessage());
-                            view.loginFailed();
                         }
 
                         @Override
