@@ -28,8 +28,10 @@ public class LoginPresenter implements ILoginPresenter {
         modelLogin = new ModelLogin();
     }
 
+
+
     @Override
-    public void CallApiLogin(final String email, String pass) {
+    public void CallApiLogin(String email, String pass) {
         if (view != null) {
             view.showLoading();
             modelLogin.PerformLoginAPI(context, email, pass, new Response.Listener<String>() {
