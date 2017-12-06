@@ -13,7 +13,7 @@ import java.util.Map;
 
 import lyhoangvinh.com.jocky_mvp.Constants.Constants;
 import lyhoangvinh.com.jocky_mvp.Constants.ConstantsKey;
-import lyhoangvinh.com.jocky_mvp.Constants.VolleySingleton;
+import lyhoangvinh.com.jocky_mvp.Volley.VolleySingleton;
 
 /**
  * Created by ADMIN on 10/19/2017.

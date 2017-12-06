@@ -1,4 +1,4 @@
-package lyhoangvinh.com.jocky_mvp.Constants;
+package lyhoangvinh.com.jocky_mvp.Volley;
 
 import android.content.Context;
 
